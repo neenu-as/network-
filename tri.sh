@@ -1,5 +1,5 @@
 # sides of triangle
-if [ $# -gt 1 ]
+if [ $# -gt 0 ]
 then
 echo "#syntax error"
 exit 1
