@@ -4,13 +4,10 @@ if [ $# -gt 1 ]
 echo "syntax error <$0> <file name>"   
 exit 1
 fi
-if [ $# -eq 0 ]
+if [ $# -ne 0 ]
 then 
- loc=`pwd`
-else
-loc=$1
+cd $1
 fi
-cd $loc
 for i in *
 do
 if [ -f $i ]
